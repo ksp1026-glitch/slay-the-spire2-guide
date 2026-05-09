@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ksp1026-glitch.github.io/slay-the-spire2-guide/sitemap.xml
