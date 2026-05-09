@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>亡灵契约师攻略 - 杀戮尖塔2 | 灾厄流 · 灵魂流 · 奥斯提召唤流</title>
-  <meta name="description" content="杀戮尖塔2亡灵契约师(Necrobinder)最全攻略：灾厄流叠层斩杀、灵魂流无限循环、奥斯提召唤流双人合体。机制深度全角色第一，66血最脆但上限最高。">
-  <meta property="og:title" content="亡灵契约师攻略 - 杀戮尖塔2 | 灾厄流 · 灵魂流 · 召唤流">
-  <meta property="og:description" content="机制深度全角色第一。灾厄流适合新手，灵魂流无限循环上限极高，奥斯提召唤流双人合体战术。">
+  <title>亡灵契约师攻略 - 杀戮尖塔2 | 灵魂流 · 灾厄流 · 奥斯提召唤流</title>
+  <meta name="description" content="杀戮尖塔2亡灵契约师(The Necrobinder)最全攻略：v0.105灵魂流S级无限循环、灾厄流A级叠层斩杀、奥斯提召唤流双人坦克。66血全角色最低，机制深度第一。">
+  <meta property="og:title" content="亡灵契约师攻略 - 杀戮尖塔2 | 灵魂流 · 灾厄流 · 召唤流">
+  <meta property="og:description" content="机制深度第一。灵魂流S级无限循环，灾厄流A级自动斩杀，奥斯提召唤流无限血量坦克。">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="zh_CN">
   <link rel="canonical" href="https://ksp1026-glitch.github.io/slay-the-spire2-guide/necrobinder.html">
@@ -35,88 +35,99 @@
     <h2>💀 亡灵契约师 (The Necrobinder)</h2>
     <div style="display:flex;gap:16px;flex-wrap:wrap;margin-bottom:20px;">
       <span class="tier-badge tier-a">T1.5</span>
-      <span style="color:var(--text-muted);">初始血量：<strong style="color:var(--red);">66</strong>（全角色最低）</span>
-      <span style="color:var(--text-muted);">初始遗物：<strong style="color:var(--gold);">缚魂命匣</strong></span>
-      <span style="color:var(--text-muted);">召唤物：<strong style="color:var(--purple);">奥斯提</strong>（亡灵巨手）</span>
-      <span style="color:var(--text-muted);">难度：<strong style="color:var(--orange);">⭐⭐ 中等</strong></span>
+      <span>血量：<strong style="color:var(--red);">66</strong>（最低）</span>
+      <span>遗物：<strong style="color:var(--gold);">缚魂命匣</strong></span>
+      <span>召唤物：<strong style="color:var(--purple);">奥斯提 Osty</strong></span>
+      <span>难度：<strong style="color:var(--orange);">⭐⭐ 中等</strong></span>
     </div>
-    <p>亡灵契约师是二代最亮眼的新角色，属于<strong>双人组合单位</strong>——自己只有66血，但有一只叫<strong>奥斯提</strong>的亡灵巨手作为召唤物，可独立攻击、免疫负面效果、优先承受伤害。核心机制围绕<strong>灾厄（Doom）</strong>和<strong>灵魂（Souls）</strong>两大系统展开。0.105补丁中核心卡被小削，无限能力受限，但灾厄流依然强势。</p>
+    <p>亡灵契约师是二代机制最深的新角色：自带的骷髅巨手 <strong>Osty</strong> 独立攻击、免疫负面、优先承伤；<strong>灾厄(Doom)</strong> 自动处决斩杀；<strong>灵魂(Souls)</strong> 是0费消耗牌抽2张；<strong>墓地(Graveyard)</strong> 让消耗牌二次利用。解锁条件：用摄政王通关一次。</p>
   </div>
 
+  <!-- 灵魂流 -->
   <div class="section">
-    <h2>流派一：灾厄流 ⭐⭐⭐⭐⭐（新手首选）</h2>
-    <p><strong>核心机制：</strong>给敌人叠加「灾厄」层数，当敌人HP ≤ 灾厄层数时，回合结束时<strong>直接处决</strong>斩杀——无视所有护甲和无敌状态！</p>
+    <h2>流派一：灵魂流（Souls）⭐⭐⭐⭐⭐ S级 上限最高</h2>
+    <p><strong>核心机制：</strong>灵魂(Souls)是0费无色消耗牌，打出后<strong>抽2张</strong>。大量生成和打出灵魂牌实现高速循环，配合 Haunt（打出灵魂随机6伤）一回合无限输出。被公认为全角色<strong>上限最高的构筑</strong>。</p>
     <table class="card-table">
-      <thead><tr><th>定位</th><th>核心卡牌</th><th>效果说明</th></tr></thead>
+      <thead><tr><th>定位</th><th>核心卡牌</th><th>效果</th></tr></thead>
       <tbody>
-        <tr><td class="card-name">叠灾厄</td><td>无处可逃 (No Escape)</td><td>10灾厄，每10层额外+5</td></tr>
-        <tr><td class="card-name">叠灾厄</td><td>倒计时 (Countdown)</td><td>能力牌：每回合随机敌人+6灾厄</td></tr>
-        <tr><td class="card-name">叠灾厄</td><td>鞭打 (Scourge)</td><td>13(16)灾厄+抽1(2)</td></tr>
-        <tr><td class="card-name">斩杀</td><td>末日降临 (End of Days)</td><td>29灾厄，HP≤层数立即斩杀</td></tr>
-        <tr><td class="card-name">斩杀</td><td>大限将至 (Time's Up)</td><td>伤害=目标灾厄总层数</td></tr>
-        <tr><td class="card-name">防御</td><td>负能量脉冲 (Negative Pulse)</td><td>6甲+全体11灾厄</td></tr>
-        <tr><td class="card-name">防御</td><td>死亡之门 (Death's Door)</td><td>6甲，本回合叠过灾厄再多触发2次</td></tr>
-        <tr><td class="card-name">防御</td><td>厄运之衣 (Shroud)</td><td>能力牌：每次叠灾厄+2甲</td></tr>
-        <tr><td class="card-name">虚弱</td><td>死亡使者 (Death Messenger)</td><td>高灾厄+全体1虚弱</td></tr>
-        <tr><td class="card-name">加费</td><td>精神过载 (Neurosurge)</td><td>0费：+3费+抽2，每回合自叠3灾厄</td></tr>
+        <tr><td class="card-name">灵魂来源</td><td>Capture Spirit（捕捉灵魂）</td><td>1费：敌-3HP，加3灵魂进抽牌堆</td></tr>
+        <tr><td class="card-name">灵魂来源</td><td>Dirge（挽歌）</td><td>X费：召唤3×X次+加X灵魂进抽牌堆</td></tr>
+        <tr><td class="card-name">灵魂来源</td><td>Grave Warden（守墓人）</td><td>1费：8甲+1灵魂进抽牌堆</td></tr>
+        <tr><td class="card-name">灵魂来源</td><td>Severance（离别）</td><td>2费：13伤+灵魂加入手牌/抽牌堆/弃牌堆</td></tr>
+        <tr><td class="card-name">灵魂来源</td><td>Seance（降灵会）</td><td>1费：虚无。把抽牌堆一张牌变为灵魂</td></tr>
+        <tr><td class="card-name">灵魂来源</td><td>Reave（收割）</td><td>1费：9伤+1灵魂进抽牌堆</td></tr>
+        <tr><td class="card-name">伤害核心</td><td>Haunt（纠缠）</td><td>1费能力：打出灵魂→随机敌人<strong>6伤</strong>（可叠加！）</td></tr>
+        <tr><td class="card-name">伤害核心</td><td>Soul Storm（灵魂风暴）</td><td>1费：9伤+消耗堆每张灵魂<strong>+2伤</strong></td></tr>
+        <tr><td class="card-name">伤害核心</td><td>Death March（死亡行军）</td><td>1费：8伤+本回合每抽1张牌+3伤</td></tr>
+        <tr><td class="card-name">防御核心</td><td>Devour Life（吞噬生命）</td><td>1费：打出灵魂→召唤+1（提升奥提斯血量上限）</td></tr>
+        <tr><td class="card-name">加费</td><td>Neurosurge（精神过载）</td><td>0费：+3费+抽2，每回合自叠3灾厄</td></tr>
+        <tr><td class="card-name">加费</td><td>Borrowed Time（预借时间）</td><td>自叠3灾厄→+1(2)能量</td></tr>
+        <tr><td class="card-name">加费</td><td>Invoke（唤起始）</td><td>1费：下回合召唤2+得2能量</td></tr>
       </tbody>
     </table>
-    <p><strong>遗物搭配：</strong>修书小刀（灾厄斩杀回3血）> 不死符文 > 骨笛。</p>
-    <div class="info-box tip"><strong>打法思路：</strong>一层走问号+火堆发育，精英只打一个。前期靠负能量脉冲+鞭打过过渡，中期死亡之门稳定格挡，后期末日降临直接结算斩杀。优先升级负能量脉冲（群体叠灾厄效率翻倍）。</div>
+    <p><strong>S级遗物：</strong>葬礼面具（开局+3灵魂）> 钟摆（每次洗牌抽1）> 化学X（Dirge的X+2）> 多莉的镜子</p>
+    <div class="info-box tip"><strong>终极 Combo：</strong>Capture Spirit 生成3灵魂 → 灵魂抽2触发 → 灵魂牌再抽到更多灵魂 → Haunt ×2 每张灵魂12伤 → Devour Life 无限叠奥提斯血量。配合 Neurosurge 无限能量，一回合清空牌库。</div>
   </div>
 
+  <!-- 灾厄流 -->
   <div class="section">
-    <h2>流派二：灵魂流 ⭐⭐⭐⭐（上限最高）</h2>
-    <p><strong>核心机制：</strong>大量生成「灵魂」牌——0费消耗牌，抽2张、无色。实现高频率滤牌循环，爆发极强。被认为是全角色<strong>上限最高的构筑</strong>。</p>
+    <h2>流派二：灾厄流（Doom）⭐⭐⭐⭐ A级 新手首选</h2>
+    <p><strong>核心机制：</strong>给敌人叠灾厄(Doom)，当敌人HP ≤ 灾厄层数时，回合结束时<strong>自动处决</strong>（无视护甲和无敌）。简单粗暴，最适合新手入门亡灵。v0.105核心卡削弱但依然强势。</p>
     <table class="card-table">
-      <thead><tr><th>定位</th><th>核心卡牌</th><th>效果说明</th></tr></thead>
+      <thead><tr><th>定位</th><th>核心卡牌</th><th>效果</th></tr></thead>
       <tbody>
-        <tr><td class="card-name">灵魂来源</td><td>捕捉灵魂 (Capture Spirit)</td><td>敌-3HP，加3灵魂进抽牌堆</td></tr>
-        <tr><td class="card-name">灵魂来源</td><td>挽歌 (Dirge)</td><td>召唤3×X次+X张灵魂</td></tr>
-        <tr><td class="card-name">灵魂来源</td><td>守墓人 (Grave Warden)</td><td>8甲+1灵魂进抽牌堆</td></tr>
-        <tr><td class="card-name">灵魂来源</td><td>离别 (Severance)</td><td>13伤+灵魂加入手牌/抽牌堆/弃牌堆</td></tr>
-        <tr><td class="card-name">伤害核心</td><td>纠缠 (Entangle)</td><td>能力牌：打出灵魂造成6(8)随机伤害</td></tr>
-        <tr><td class="card-name">伤害核心</td><td>灵魂风暴 (Soul Storm)</td><td>9伤+消耗堆每张灵魂+2</td></tr>
-        <tr><td class="card-name">防御</td><td>吞噬生命 (Devour Life)</td><td>打出灵魂提升召唤值=奥提斯血量</td></tr>
-        <tr><td class="card-name">防御</td><td>不死 (Undeath)</td><td>0费7甲，自我复制进弃牌堆</td></tr>
-        <tr><td class="card-name">精简</td><td>降灵 (Dredge)</td><td>将任意牌变为灵魂</td></tr>
-        <tr><td class="card-name">加费</td><td>预借时间 (Borrowed Time)</td><td>自叠3灾厄→+1(2)能量</td></tr>
+        <tr><td class="card-name">叠灾厄</td><td>No Escape（无处可逃）</td><td>1费：10灾厄+每10层额外+5</td></tr>
+        <tr><td class="card-name">叠灾厄</td><td>Negative Pulse（负能量脉冲）</td><td>1费：5甲+全体7灾厄</td></tr>
+        <tr><td class="card-name">叠灾厄</td><td>Scourge（鞭打）</td><td>1费：13(16)灾厄+抽1(2)</td></tr>
+        <tr><td class="card-name">叠灾厄</td><td>Deathbringer（死亡使者）</td><td>2费：21灾厄+全体1虚弱</td></tr>
+        <tr><td class="card-name">叠灾厄</td><td>Countdown（倒计时）</td><td>1费能力：每回合开始随机敌人+6灾厄</td></tr>
+        <tr><td class="card-name">斩杀</td><td>End of Days（末日降临）</td><td>3费：29灾厄+灾厄≥HP直接斩杀</td></tr>
+        <tr><td class="card-name">斩杀</td><td>Time's Up（大限将至）</td><td>2费：伤害=目标灾厄总层数，消耗</td></tr>
+        <tr><td class="card-name">斩杀</td><td>Oblivion（湮灭）</td><td>技能：本回合每打一张牌→+3灾厄</td></tr>
+        <tr><td class="card-name">防御</td><td>Death's Door（死亡之门）</td><td>1费：6甲，本回合叠过灾厄则多触发2次</td></tr>
+        <tr><td class="card-name">防御</td><td>Shroud（厄运之衣）</td><td>1费能力：每次叠灾厄+2甲</td></tr>
+        <tr><td class="card-name">混合</td><td>Blight Strike（枯萎打击）</td><td>1费：8伤+叠灾厄=造成的伤害量</td></tr>
       </tbody>
     </table>
-    <p><strong>遗物搭配：</strong>钟摆（每次洗牌抽1）> 葬礼面具（开局+3灵魂）> 多莉的镜子。</p>
-    <div class="info-box tip"><strong>打法要点：</strong>少量卡即可实现不卡手循环。第一层优先拿捕捉灵魂或守墓人过渡，第二层找到纠缠就是质变。关键卡不齐时可以灵活转灾厄流，两个流派兼容性不错。</div>
+    <p><strong>S级遗物：</strong>修书小刀（灾厄斩杀回3血）> 不死符文</p>
+    <div class="info-box tip"><strong>新手打法：</strong>一层走问号+火堆。前期拿 Negative Pulse + Scourge 过渡，中期 Death's Door 稳定防御，后期 End of Days 直接结算。一场战斗中先叠到50+灾厄再触发斩杀。</div>
   </div>
 
+  <!-- 奥斯提召唤流 -->
   <div class="section">
-    <h2>流派三：奥斯提召唤流 ⭐⭐⭐（进阶玩法）</h2>
-    <p><strong>核心思路：</strong>强化奥提斯的攻击力和血量，相当于拥有<strong>无限血量的坦克</strong>。适合喜欢稳扎稳打的玩家。</p>
+    <h2>流派三：奥斯提召唤流 ⭐⭐⭐⭐ S级潜力</h2>
+    <p><strong>核心思路：</strong>强化奥斯提(Osty)成为<strong>无限血量的坦克+输出</strong>。Osty 独立于你的HP，通过叠召唤值提升血量，等效双倍血条。</p>
     <table class="card-table">
-      <thead><tr><th>定位</th><th>核心卡牌</th><th>效果说明</th></tr></thead>
+      <thead><tr><th>定位</th><th>核心卡牌</th><th>效果</th></tr></thead>
       <tbody>
-        <tr><td class="card-name">承伤</td><td>吸引仇恨 (Pull Aggro)</td><td>等效11甲+召唤加成</td></tr>
-        <tr><td class="card-name">攻击</td><td>抓取 (Squeeze)</td><td>3费25伤+每张奥提斯攻击卡+5</td></tr>
-        <tr><td class="card-name">攻击</td><td>猛晃 (Flatten)</td><td>2费12伤，奥提斯攻击过则0费</td></tr>
-        <tr><td class="card-name">攻击</td><td>重压 (Sic 'Em)</td><td>奥提斯5伤+命中召唤2</td></tr>
-        <tr><td class="card-name">强化</td><td>钙化 (Calcify)</td><td>能力牌：+4奥提斯伤害</td></tr>
-        <tr><td class="card-name">强化</td><td>亡骸精通 (Necro Mastery)</td><td>大幅提升奥提斯力量</td></tr>
-        <tr><td class="card-name">治疗</td><td>增生 (Spur)</td><td>召唤3+治疗奥提斯5HP</td></tr>
+        <tr><td class="card-name">核心输出</td><td>Squeeze（抓取）</td><td>3费：Osty 25伤+牌组每张Osty攻击卡+5</td></tr>
+        <tr><td class="card-name">核心输出</td><td>Flatten（猛晃）</td><td>2费：Osty 12伤，Osty攻击过则<strong>0费</strong></td></tr>
+        <tr><td class="card-name">核心输出</td><td>Protector（守护者）</td><td>Osty 10伤+以Osty血量加值</td></tr>
+        <tr><td class="card-name">0费攻击</td><td>Right Hand Hand</td><td>0费：Osty 4伤，打出2+费牌时<strong>回手</strong></td></tr>
+        <tr><td class="card-name">0费攻击</td><td>Fetch（抓取）</td><td>0费：Osty 3伤，每回合首次打抽1</td></tr>
+        <tr><td class="card-name">承伤</td><td>Pull Aggro（吸引仇恨）</td><td>2费：召唤4+7甲，Osty帮你扛伤害</td></tr>
+        <tr><td class="card-name">承伤</td><td>Sic 'Em（去咬）</td><td>1费：Osty 5伤+命中的话召唤2</td></tr>
+        <tr><td class="card-name">强化核心</td><td>Necro Mastery（亡骸精通）</td><td>2费能力：召唤5，Osty受伤→所有敌人受同等伤害</td></tr>
+        <tr><td class="card-name">治疗</td><td>Spur（增生）</td><td>1费保留：召唤3+治疗Osty 5HP</td></tr>
+        <tr><td class="card-name">防御</td><td>Bone Flute（骨笛遗物）</td><td>Osty攻击时+2甲</td></tr>
       </tbody>
     </table>
+    <p><strong>S级遗物：</strong>骨笛 > 亡灵法师之冠 > 修书小刀</p>
   </div>
 
   <div class="section">
     <h2>亡灵契约师通用 Tips</h2>
     <ul>
-      <li><strong>56血是全角色最低</strong>，前期优先拿防御牌保命</li>
-      <li>奥提斯是第二生命条——当它血量低时要立刻用吞噬生命/增生回复</li>
-      <li>灾厄和灵魂两个流派兼容性不错，混合构筑也很强</li>
-      <li>商店优先删打击——契约师不需要物理攻击</li>
-      <li>精神过载是0费+3费神卡，看到无脑拿</li>
+      <li><strong>56血是最脆的角色</strong>——一层优先拿防御牌，Osty 是你真正的血条</li>
+      <li>灵魂流和灾厄流<strong>兼容性很好</strong>——可以灵魂过牌+灾厄斩杀混合构筑</li>
+      <li>Neurosurge 0费+3费是<strong>必拿神卡</strong></li>
+      <li>墓地机制很灵活——消耗掉的牌可以通过 Dredge 回收</li>
+      <li>商店优先删 Strike——亡灵不需要基础物理攻击</li>
     </ul>
   </div>
 
 </div>
 
-<footer class="footer"><p>内容来源：2026年3月 EA版本 · 0.105补丁 · 社区实测数据</p></footer>
+<footer class="footer"><p>内容来源：2026年3月 EA · v0.105 · Destructoid/TheGamer/PCGamesN</p></footer>
 </body>
 </html>

@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>故障机器人攻略 - 杀戮尖塔2 | 冰霜集中流 · 充能球爆发 · 压缩状态流</title>
-  <meta name="description" content="杀戮尖塔2故障机器人(Defect)最全攻略：冰霜集中流最稳通关，充能球爆发高伤害，压缩状态流二代最强蓝卡。学习曲线最陡的角色，联机价值拉满。">
-  <meta property="og:title" content="故障机器人攻略 - 杀戮尖塔2 | 冰霜集中 · 充能球 · 压缩流">
-  <meta property="og:description" content="学习曲线最陡但联机价值最高的角色。冰霜集中流最稳通关，压缩状态处理是二代最强机制之一。">
+  <title>故障机器人攻略 - 杀戮尖塔2 | 冰霜流 · Claw流 · Glass Orb · 状态牌处理</title>
+  <meta name="description" content="杀戮尖塔2故障机器人(Defect) v0.105攻略：新增Glass Orb、状态牌协同机制；Defragment变为稀有、Consume移除、Feral新能力。冰霜集中流/Claw流/状态处理流三大流派。">
+  <meta property="og:title" content="故障机器人攻略 - 杀戮尖塔2 | Glass Orb · 状态牌协同 · Claw">
+  <meta property="og:description" content="二代Defect全新机制：Glass Orb、状态牌输出转换、Feral能力。Defragment稀有度上调，Consume移除。">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="zh_CN">
   <link rel="canonical" href="https://ksp1026-glitch.github.io/slay-the-spire2-guide/defect.html">
@@ -35,77 +35,122 @@
     <h2>🤖 故障机器人 (The Defect)</h2>
     <div style="display:flex;gap:16px;flex-wrap:wrap;margin-bottom:20px;">
       <span class="tier-badge tier-c">T2</span>
-      <span style="color:var(--text-muted);">初始遗物：<strong style="color:var(--gold);">破损核心</strong></span>
-      <span style="color:var(--text-muted);">难度：<strong style="color:var(--red);">⭐⭐⭐⭐ 困难</strong></span>
-      <span style="color:var(--text-muted);">定位：<strong style="color:var(--text);">状态牌处理 · 联机顶级辅助</strong></span>
+      <span>遗物：<strong style="color:var(--gold);">破损核心</strong>（开局1闪电球）</span>
+      <span>难度：<strong style="color:var(--red);">⭐⭐⭐⭐ 最难</strong></span>
     </div>
-    <p>故障机器人是学习曲线最陡的角色，但也是二代最有特色的设计之一。T2 的评级不代表弱——而是<strong>其他四位角色实在太强</strong>。二代最大变化：鸡煲不再像一代那样依赖充能球输出，真正优势是<strong>处理状态牌</strong>。「压缩」被认为是全游戏最强蓝卡。敌人塞牌越狠，鸡煲越强。</p>
+    <p>故障机器人在二代经历了最大的机制变革。最大的变化：<strong>新增 Glass Orb（玻璃球）</strong>——AOE伤害递减的新型充能球；<strong>状态牌协同</strong>成为核心体系；<strong>集中(Focus)大多变为临时效果</strong>——Defragment 升为稀有卡、Consume 彻底移除、Biased Cognition 仅远古池可获得。新增能力 Feral 让0费攻击（如Claw）获得自循环能力。</p>
+  </div>
+
+  <!-- 版本变动 -->
+  <div class="section">
+    <h2>二代关键机制变化</h2>
+    <table class="card-table">
+      <thead><tr><th>变化</th><th>详情</th></tr></thead>
+      <tbody>
+        <tr><td style="color:var(--green);">🆕 Glass Orb</td><td>新充能球类型：造成<strong>AOE伤害(4+Focus)</strong>，每回合递减1点。激发时造成<strong>双倍当前值</strong></td></tr>
+        <tr><td style="color:var(--green);">🆕 状态牌协同</td><td>Flak Cannon（消耗状态牌每张打8）、Smokestack（生状态牌→AOE）、Compact（状态牌→燃料）、Fight Through（叠甲+塞伤口）</td></tr>
+        <tr><td style="color:var(--green);">🆕 Feral</td><td>2费能力：<strong>每回合第一张0费攻击自动回手</strong>。Claw 流核心发动机</td></tr>
+        <tr><td style="color:var(--red);">📉 Defragment</td><td>从罕见→<strong>稀有</strong>。永久Focus 获取难度大增</td></tr>
+        <tr><td style="color:var(--red);">🗑️ Consume 移除</td><td>一代经典Focus来源被彻底删除</td></tr>
+        <tr><td style="color:var(--orange);">⚠️ Biased Cognition</td><td>只能在<strong>远古事件池</strong>中获得，不能常规选到</td></tr>
+        <tr><td>🔄 Shatter 重制</td><td>现在<strong>激发所有充能球两次</strong>，爆发力大幅提升</td></tr>
+        <tr><td>📈 Hyperbeam 增强</td><td>v0.105 伤害提高</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- 冰霜集中流 -->
+  <div class="section">
+    <h2>流派一：冰霜集中流 ⭐⭐⭐⭐⭐（最稳定）</h2>
+    <p><strong>核心思路：</strong>多挂冰霜球被动叠甲，配合集中的临时来源提升数值，用 Blizzard（暴风雪）作为输出。注意集中现在是临时资源，需要合理规划使用时机。</p>
+    <table class="card-table">
+      <thead><tr><th>定位</th><th>核心卡牌</th><th>效果</th></tr></thead>
+      <tbody>
+        <tr><td class="card-name">冰霜来源</td><td>Glacier（冰川）</td><td>2费：9(12)甲+生成<strong>2冰霜球</strong></td></tr>
+        <tr><td class="card-name">冰霜来源</td><td>Cold Snap（寒流）</td><td>1费：6(9)伤+生成1冰霜球</td></tr>
+        <tr><td class="card-name">冰霜来源</td><td>Coolheaded（冷静头脑）</td><td>1费：生成1(2)冰霜球+抽1</td></tr>
+        <tr><td class="card-name">爆发防御</td><td>Ice Lance（冰枪）</td><td>3费：19伤+生成<strong>3冰霜球</strong></td></tr>
+        <tr><td class="card-name">临时集中</td><td>Hotfix（热修复）</td><td>0费：本回合<strong>+2集中</strong></td></tr>
+        <tr><td class="card-name">临时集中</td><td>Synchronize（同步）</td><td>1费：本回合每种充能球+2集中。消耗。</td></tr>
+        <tr><td class="card-name">永久集中</td><td>Defragment（碎片整理）</td><td>1费<strong>稀有</strong>：+1(2)集中。现在很难拿到</td></tr>
+        <tr><td class="card-name">输出核心</td><td>Blizzard（暴风雪）</td><td>伤害=冰霜球累计触发次数。v0.103增强</td></tr>
+        <tr><td class="card-name">充能球位</td><td>Capacitor（扩容）</td><td>1费：+2(3)充能球位</td></tr>
+        <tr><td class="card-name">过牌</td><td>Skim（浏览）</td><td>1费：抽3</td></tr>
+      </tbody>
+    </table>
+    <div class="info-box warn"><strong>二代核心变化：</strong>永久集中来之不易。不要像一代那样无脑叠集中。Hotfix 和 Synchronize 是新的集中主力——在需要爆发防御的回合使用，而非每回合依赖。</div>
+  </div>
+
+  <!-- Claw流 -->
+  <div class="section">
+    <h2>流派二：Claw 流（爪击）⭐⭐⭐⭐ 二代大加强</h2>
+    <p><strong>核心思路：</strong>Claw 每用一次全局+2伤害依然在。二代新增 <strong>Feral</strong> 能力让第一张0费攻击每回合自动回手——Claw 不再消耗掉就没了，回手后越打越痛。配合 All for One 回收所有0费牌。</p>
+    <table class="card-table">
+      <thead><tr><th>定位</th><th>核心卡牌</th><th>效果</th></tr></thead>
+      <tbody>
+        <tr><td class="card-name">核心输出</td><td>Claw（爪击）</td><td>0费：3伤，本局所有Claw永久+2伤</td></tr>
+        <tr><td class="card-name">回手机制</td><td>Feral</td><td>2费能力：<strong>每回合第一张0费攻击自动回手</strong></td></tr>
+        <tr><td class="card-name">回收核心</td><td>All for One</td><td>2费：10伤+<strong>弃牌堆所有0费牌回手</strong></td></tr>
+        <tr><td class="card-name">回收辅助</td><td>Hologram（全息影像）</td><td>1费：3(5)甲+从弃牌堆取回一张牌</td></tr>
+        <tr><td class="card-name">攻击生成</td><td>Adaptive Strike</td><td>2费：18伤+<strong>0费复制品加弃牌堆</strong></td></tr>
+        <tr><td class="card-name">0费攻击</td><td>Go for the Eyes</td><td>0费：3伤，敌人攻击中则1层虚弱</td></tr>
+        <tr><td class="card-name">0费攻击</td><td>Beam Cell</td><td>0费：3伤+1易伤</td></tr>
+        <tr><td class="card-name">抽牌</td><td>Scrape（刮削）</td><td>1费：7伤+抽4，<strong>丢弃非0费牌</strong></td></tr>
+      </tbody>
+    </table>
+    <div class="info-box tip"><strong>Combo 核心：</strong>Feral + Claw = 每回合自动回手一张 Claw → 配合 Scrape 抽更多的 Claw → All for One 一波回手全部 Claw → Claw 叠到20+伤害。Feral 彻底解决了 Claw 牌不够的问题。</div>
+  </div>
+
+  <!-- 状态牌处理流 -->
+  <div class="section">
+    <h2>流派三：状态牌处理流 ⭐⭐⭐⭐ 二代独有</h2>
+    <p><strong>核心思路：</strong>主动生成状态牌（Wound/Dazed/Burn 等），然后用 Flak Cannon 将其消耗换输出、Compact 转化为燃料、Smokestack 生成时AOE。这是二代鸡煲最独特的体系，联机中价值拉满。</p>
+    <table class="card-table">
+      <thead><tr><th>定位</th><th>核心卡牌</th><th>效果</th></tr></thead>
+      <tbody>
+        <tr><td class="card-name">核心输出</td><td>Flak Cannon</td><td>2费：<strong>消耗所有状态牌</strong>，每张8伤随机敌人</td></tr>
+        <tr><td class="card-name">状态来源</td><td>Fight Through</td><td>1费：13甲+塞2张Wound进弃牌堆</td></tr>
+        <tr><td class="card-name">状态来源</td><td>Boost Away</td><td>0费：6甲+塞1张Dazed进弃牌堆</td></tr>
+        <tr><td class="card-name">状态转化</td><td>Compact</td><td>1费：6甲+所有状态牌<strong>变为Fuel</strong></td></tr>
+        <tr><td class="card-name">状态AOE</td><td>Smokestack</td><td>1费能力：每生成一张状态牌，<strong>全体5伤</strong></td></tr>
+        <tr><td class="card-name">状态过牌</td><td>Iteration</td><td>1费能力：每回合抽到的第一张状态牌→<strong>改抽2张</strong></td></tr>
+        <tr><td class="card-name">状态生成球</td><td>Trash to Treasure</td><td>1费能力：每生成状态牌→<strong>生成1随机充能球</strong></td></tr>
+        <tr><td class="card-name">火箭拳</td><td>Rocket Punch</td><td>2费：13伤+抽1。生状态牌后→<strong>0费</strong></td></tr>
+      </tbody>
+    </table>
+    <div class="info-box tip"><strong>联机定位：</strong>鸡煲是团队中最强对策角色。面对会塞牌的高血量敌人，鸡煲一人把全队的状态牌转化为输出和充能球。Flak Cannon + Fight Through 的 combo 是最简单高效的状态输出循环。</div>
+  </div>
+
+  <!-- Glass Orb -->
+  <div class="section">
+    <h2>流派四：Glass Orb 爆发流 ⭐⭐⭐</h2>
+    <p><strong>核心思路：</strong>利用二代新增的 Glass Orb（AOE伤害递减）进行群体压制。Glasswork 生成玻璃球，Shatter 激发全部充能球两次实现爆发。</p>
+    <table class="card-table">
+      <thead><tr><th>定位</th><th>核心卡牌</th><th>效果</th></tr></thead>
+      <tbody>
+        <tr><td class="card-name">Glass来源</td><td>Glasswork</td><td>1费：5甲+生成1玻璃球</td></tr>
+        <tr><td class="card-name">Glass来源</td><td>Refract</td><td>3费：9伤×2+生成2玻璃球</td></tr>
+        <tr><td class="card-name">Glass来源</td><td>Spinner</td><td>1费能力：每回合开始生成1玻璃球</td></tr>
+        <tr><td class="card-name">爆发核心</td><td>Shatter</td><td>1费：11全体伤+<strong>激发所有球两次</strong></td></tr>
+        <tr><td class="card-name">电力辅助</td><td>Tesla Coil</td><td>0费：3伤+<strong>触发所有闪电球</strong></td></tr>
+      </tbody>
+    </table>
+    <div class="info-box warn"><strong>注意：</strong>Glass Orb 每回合伤害递减，适合速战速决不适合磨血。搭配 Shatter 在玻璃球数值最高时激发，打出爆发窗口。</div>
   </div>
 
   <div class="section">
-    <h2>流派一：冰霜集中流 ⭐⭐⭐⭐⭐（最稳通关）</h2>
-    <p><strong>核心思路：</strong>冰霜充能球被动叠甲 + 集中(Focus)提升数值 → 等敌人自己死。这是鸡煲最稳定的通关方案，容错率极高。</p>
-    <table class="card-table">
-      <thead><tr><th>定位</th><th>核心卡牌</th><th>效果说明</th></tr></thead>
-      <tbody>
-        <tr><td class="card-name">冰霜球</td><td>冰川 (Glacier)</td><td>9(12)甲+生成2冰霜球</td></tr>
-        <tr><td class="card-name">冰霜球</td><td>寒流 (Cold Snap)</td><td>6(9)伤+生成1冰霜球</td></tr>
-        <tr><td class="card-name">集中来源</td><td>碎片整理 (Defragment)</td><td>+1(2)集中，能力牌</td></tr>
-        <tr><td class="card-name">集中来源</td><td>消耗 (Consume)</td><td>+2(3)集中，-1充能球位</td></tr>
-        <tr><td class="card-name">输出</td><td>暴风雪 (Blizzard)</td><td>伤害=冰霜球触发次数，v0.98.1加强</td></tr>
-        <tr><td class="card-name">充能球位</td><td>扩容 (Capacitor)</td><td>+2(3)充能球位</td></tr>
-        <tr><td class="card-name">过牌</td><td>冷静头脑 (Coolheaded)</td><td>1(2)冰霜球+抽1(2)</td></tr>
-      </tbody>
-    </table>
-    <div class="info-box tip"><strong>打法节奏：</strong>① 早期优先抓冰川/寒流 → ② 碎片整理或消耗来者不拒 → ③ 去商店删打击 → ④ 火堆升级集中能力牌 → ⑤ 等被动格挡成型后自动碾压。到三层时，冰霜球每回合被动叠40-60甲不是梦。</div>
-  </div>
-
-  <div class="section">
-    <h2>流派二：充能球爆发流 ⭐⭐⭐</h2>
-    <p><strong>核心思路：</strong>大量生成充能球（闪电/黑暗）→ 弹幕爆发收割。需要能量遗物支持。</p>
-    <table class="card-table">
-      <thead><tr><th>定位</th><th>核心卡牌</th><th>效果说明</th></tr></thead>
-      <tbody>
-        <tr><td class="card-name">核心输出</td><td>弹幕 (Barrage)</td><td>每充能球6(8)伤害，v0.98.1加强</td></tr>
-        <tr><td class="card-name">闪电球</td><td>电击 (Ball Lightning)</td><td>7(10)伤+生成1闪电球</td></tr>
-        <tr><td class="card-name">闪电球</td><td>静电释放 (Static Discharge)</td><td>受伤生成1(2)闪电球</td></tr>
-        <tr><td class="card-name">黑暗球</td><td>黑暗 (Darkness)</td><td>生成1黑暗球+触发被动</td></tr>
-        <tr><td class="card-name">增伤</td><td>循环 (Loop)</td><td>每回合触发最右充能球1(2)次</td></tr>
-      </tbody>
-    </table>
-    <div class="info-box warn"><strong>注意：</strong>爆发流严重依赖能量遗物（如核能电池）。没有足够能量支撑时，过多充能球生成卡会卡手。</div>
-  </div>
-
-  <div class="section">
-    <h2>流派三：压缩状态流 ⭐⭐⭐⭐⭐（二代特色）</h2>
-    <p><strong>核心思路：</strong>利用「压缩」处理状态牌获取巨大优势——一身故障转化为能力。这是二代鸡煲的<strong>独门绝活</strong>，联机中价值拉满。</p>
-    <table class="card-table">
-      <thead><tr><th>定位</th><th>核心卡牌</th><th>效果说明</th></tr></thead>
-      <tbody>
-        <tr><td class="card-name">核心</td><td>压缩 (Compress)</td><td>1费：消耗所有状态牌，每张获增益。全游戏最强蓝卡之一</td></tr>
-        <tr><td class="card-name">配套</td><td>重启 (Reboot)</td><td>洗牌+抽4(6)，同时塞故障进牌堆</td></tr>
-        <tr><td class="card-name">配套</td><td>超频 (Overclock)</td><td>抽2，塞1故障</td></tr>
-      </tbody>
-    </table>
-    <div class="info-box tip"><strong>联机定位：</strong>鸡煲是团队中最强对策角色——专门解决队友的状态牌威胁。面对高血量+塞牌敌人时，鸡煲一人扛起全队防线。</div>
-  </div>
-
-  <div class="section">
-    <h2>故障机器人常见误区</h2>
-    <table class="card-table">
-      <thead><tr><th style="color:var(--red);">误区</th><th style="color:var(--green);">正确做法</th></tr></thead>
-      <tbody>
-        <tr><td>过度抓取爪击(Claw)等0费攻击</td><td>0费攻击是陷阱，臃肿牌组使能力牌沉底</td></tr>
-        <tr><td>跳过奖励不够果断</td><td>不增加协同 → 直接跳过</td></tr>
-        <tr><td>忽视能量遗物</td><td>机器人严重依赖能量生成</td></tr>
-        <tr><td>不删初始打击</td><td>商店删打击是提升稳定性的最关键操作</td></tr>
-        <tr><td>只玩充能球忽视压缩</td><td>压缩才是二代鸡煲的最强底牌</td></tr>
-      </tbody>
-    </table>
+    <h2>故障机器人通用 Tips</h2>
+    <ul>
+      <li><strong>不要像一代那样过度依赖永久集中</strong>——Defragment 稀有、Consume 没了——学会用 Hotfix/Synchronize 做临时爆发</li>
+      <li>Feral + Claw 是二代最简单的鸡煲入门流派</li>
+      <li>状态处理流在<strong>多人联机中价值最高</strong>，单人强度中等</li>
+      <li>Glass Orb 是新型 AoE 工具，对群体战斗效果拔群</li>
+      <li>商店优先删 Strike——打击在 Defect 牌组里是最废的卡</li>
+    </ul>
   </div>
 
 </div>
 
-<footer class="footer"><p>内容来源：2026年3月 EA版本 · 0.105补丁 · 社区实测数据</p></footer>
+<footer class="footer"><p>内容来源：2026年3月 EA · v0.105 · IGN/GamerBlurb/社区实测</p></footer>
 </body>
 </html>
