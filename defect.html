@@ -1,156 +1,106 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>故障机器人攻略 - 杀戮尖塔2 | 冰霜流 · 爪击流 · 玻璃 充能球 · 状态牌处理</title>
- <meta name="description" content="杀戮尖塔2故障机器人 v0.105攻略：新增玻璃 充能球、状态牌协同机制；碎片整理变为稀有、消耗移除、野性新能力。冰霜集中流/爪击流/状态处理流三大流派。">
- <meta property="og:title" content="故障机器人攻略 - 杀戮尖塔2 | 玻璃 充能球 · 状态牌协同 · 爪击">
- <meta property="og:description" content="二代故障机器人全新机制：玻璃 充能球、状态牌输出转换、野性能力。碎片整理稀有度上调，消耗移除。">
- <meta property="og:type" content="website">
- <meta property="og:locale" content="zh_CN">
- <link rel="canonical" href="https://ksp1026-glitch.github.io/slay-the-spire2-guide/defect.html">
- <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>故障机器人攻略 - 杀戮尖塔2 | 冰霜流 · 爪击流 · 状态处理流 · 玻璃球</title>
+<meta name="description" content="杀戮尖塔2故障机器人v0.105攻略：全卡从夯到拉锐评。暴风雪等27张一代卡移除。新增玻璃球、状态牌协同、野性能力。">
+<meta property="og:title" content="故障机器人攻略 - 杀戮尖塔2 | 冰霜 · 爪击 · 状态 · 玻璃球">
+<meta property="og:description" content="v0.105：移除27张一代卡，新增40+卡。集中变临时、碎片整理升稀有、消耗移除。全卡锐评。">
+<meta property="og:type" content="website"><meta property="og:locale" content="zh_CN">
+<link rel="canonical" href="https://ksp1026-glitch.github.io/slay-the-spire2-guide/defect.html">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<nav class="navbar">
- <div class="inner">
- <a href="index.html" class="logo">⚔️ 杀戮尖塔<span>2</span> 攻略</a>
- <div class="nav-links">
- <a href="index.html">首页</a>
- <a href="ironclad.html">铁甲战士</a>
- <a href="silent.html">静默猎手</a>
- <a href="defect.html" class="active">故障机器人</a>
- <a href="necrobinder.html">亡灵契约师</a>
- <a href="regent.html">摄政王</a>
- <a href="strategy.html">路线&抓牌</a>
- </div>
- </div>
-</nav>
-
+<nav class="navbar"><div class="inner">
+<a href="index.html" class="logo">⚔️ 杀戮尖塔<span>2</span> 攻略</a>
+<div class="nav-links">
+<a href="index.html">首页</a><a href="ironclad.html">铁甲战士</a><a href="silent.html">静默猎手</a><a href="defect.html" class="active">故障机器人</a><a href="necrobinder.html">亡灵契约师</a><a href="regent.html">摄政王</a><a href="strategy.html">路线&抓牌</a>
+</div></div></nav>
 <div class="content" style="margin-top:30px;">
 
- <div class="section">
- <h2>🤖 故障机器人 </h2>
- <div style="display:flex;gap:16px;flex-wrap:wrap;margin-bottom:20px;">
- <span class="tier-badge tier-c">T2</span>
- <span>遗物：<strong style="color:var;">破损核心</strong></span>
- <span>难度：<strong style="color:var;">⭐⭐⭐⭐ 最难</strong></span>
- </div>
- <p>故障机器人在二代经历了最大的机制变革。最大的变化：<strong>新增 玻璃 充能球</strong>——全体伤害递减的新型充能球；<strong>状态牌协同</strong>成为核心体系；<strong>集中大多变为临时效果</strong>——碎片整理 升为稀有卡、消耗 彻底移除、偏见认知 仅远古池可获得。新增能力 野性 让0费攻击获得自循环能力。</p>
- </div>
-
- <!-- 版本变动 -->
- <div class="section">
- <h2>二代关键机制变化</h2>
- <table class="card-table">
- <thead><tr><th>变化</th><th>详情</th></tr></thead>
- <tbody>
- <tr><td style="color:var;">🆕 玻璃 充能球</td><td>新充能球类型：造成<strong>全体伤害</strong>，每回合递减1点。激发时造成<strong>双倍当前值</strong></td></tr>
- <tr><td style="color:var;">🆕 状态牌协同</td><td>高射炮、烟囱、压缩、奋力突破</td></tr>
- <tr><td style="color:var;">🆕 野性</td><td>2费能力：<strong>每回合第一张0费攻击自动回手</strong>。爪击 流核心发动机</td></tr>
- <tr><td style="color:var;">📉 碎片整理</td><td>从罕见→<strong>稀有</strong>。永久集中 获取难度大增</td></tr>
- <tr><td style="color:var;">🗑️ 消耗 移除</td><td>一代经典集中来源被彻底删除</td></tr>
- <tr><td style="color:var;">⚠️ 偏见认知</td><td>只能在<strong>远古事件池</strong>中获得，不能常规选到</td></tr>
- <tr><td>🔄 碎裂 重制</td><td>现在<strong>激发所有充能球两次</strong>，爆发力大幅提升</td></tr>
- <tr><td>📈 超级光束 增强</td><td>v0.105 伤害提高</td></tr>
- </tbody>
- </table>
- </div>
-
- <!-- 冰霜集中流 -->
- <div class="section">
- <h2>流派一：冰霜集中流 ⭐⭐⭐⭐⭐</h2>
- <p><strong>核心思路：</strong>多挂冰霜球被动叠甲，配合集中的临时来源提升数值，用 暴风雪作为输出。注意集中现在是临时资源，需要合理规划使用时机。</p>
- <table class="card-table">
- <thead><tr><th>定位</th><th>核心卡牌</th><th>效果</th></tr></thead>
- <tbody>
- <tr><td class="card-name">冰霜来源</td><td>冰川</td><td>2费：9甲+生成<strong>2冰霜球</strong></td></tr>
- <tr><td class="card-name">冰霜来源</td><td>寒流</td><td>1费：6伤+生成1冰霜球</td></tr>
- <tr><td class="card-name">冰霜来源</td><td>冷静头脑</td><td>1费：生成1冰霜球+抽1</td></tr>
- <tr><td class="card-name">爆发防御</td><td>冰枪</td><td>3费：19伤+生成<strong>3冰霜球</strong></td></tr>
- <tr><td class="card-name">临时集中</td><td>热修复</td><td>0费：本回合<strong>+2集中</strong></td></tr>
- <tr><td class="card-name">临时集中</td><td>同步</td><td>1费：本回合每种充能球+2集中。消耗。</td></tr>
- <tr><td class="card-name">永久集中</td><td>碎片整理</td><td>1费<strong>稀有</strong>：+1集中。现在很难拿到</td></tr>
- <tr><td class="card-name">输出核心</td><td>暴风雪</td><td>伤害=冰霜球累计触发次数。v0.103增强</td></tr>
- <tr><td class="card-name">充能球位</td><td>扩容</td><td>1费：+2充能球位</td></tr>
- <tr><td class="card-name">过牌</td><td>浏览</td><td>1费：抽3</td></tr>
- </tbody>
- </table>
- <div class="info-box warn"><strong>二代核心变化：</strong>永久集中来之不易。不要像一代那样无脑叠集中。热修复 和 同步 是新的集中主力——在需要爆发防御的回合使用，而非每回合依赖。</div>
- </div>
-
- <!-- 爪击流 -->
- <div class="section">
- <h2>流派二：爪击 流⭐⭐⭐⭐ 二代大加强</h2>
- <p><strong>核心思路：</strong>爪击 每用一次全局+2伤害依然在。二代新增 <strong>野性</strong> 能力让第一张0费攻击每回合自动回手——爪击 不再消耗掉就没了，回手后越打越痛。配合 万物一心 回收所有0费牌。</p>
- <table class="card-table">
- <thead><tr><th>定位</th><th>核心卡牌</th><th>效果</th></tr></thead>
- <tbody>
- <tr><td class="card-name">核心输出</td><td>爪击</td><td>0费：3伤，本局所有爪击永久+2伤</td></tr>
- <tr><td class="card-name">回手机制</td><td>野性</td><td>2费能力：<strong>每回合第一张0费攻击自动回手</strong></td></tr>
- <tr><td class="card-name">回收核心</td><td>万物一心</td><td>2费：10伤+<strong>弃牌堆所有0费牌回手</strong></td></tr>
- <tr><td class="card-name">回收辅助</td><td>全息影像</td><td>1费：3甲+从弃牌堆取回一张牌</td></tr>
- <tr><td class="card-name">攻击生成</td><td>适应打击</td><td>2费：18伤+<strong>0费复制品加弃牌堆</strong></td></tr>
- <tr><td class="card-name">0费攻击</td><td>瞄准眼睛</td><td>0费：3伤，敌人攻击中则1层虚弱</td></tr>
- <tr><td class="card-name">0费攻击</td><td>光束细胞</td><td>0费：3伤+1易伤</td></tr>
- <tr><td class="card-name">抽牌</td><td>刮削</td><td>1费：7伤+抽4，<strong>丢弃非0费牌</strong></td></tr>
- </tbody>
- </table>
- <div class="info-box tip"><strong>连击 核心：</strong>野性 + 爪击 = 每回合自动回手一张 爪击 → 配合 刮削 抽更多的 爪击 → 万物一心 一波回手全部 爪击 → 爪击 叠到20+伤害。野性 彻底解决了 爪击 牌不够的问题。</div>
- </div>
-
- <!-- 状态牌处理流 -->
- <div class="section">
- <h2>流派三：状态牌处理流 ⭐⭐⭐⭐ 二代独有</h2>
- <p><strong>核心思路：</strong>主动生成状态牌，然后用 高射炮 将其消耗换输出、压缩 转化为燃料、烟囱 生成时全体。这是二代鸡煲最独特的体系，联机中价值拉满。</p>
- <table class="card-table">
- <thead><tr><th>定位</th><th>核心卡牌</th><th>效果</th></tr></thead>
- <tbody>
- <tr><td class="card-name">核心输出</td><td>高射炮</td><td>2费：<strong>消耗所有状态牌</strong>，每张8伤随机敌人</td></tr>
- <tr><td class="card-name">状态来源</td><td>奋力突破</td><td>1费：13甲+塞2张伤口进弃牌堆</td></tr>
- <tr><td class="card-name">状态来源</td><td>加速脱离</td><td>0费：6甲+塞1张眩晕进弃牌堆</td></tr>
- <tr><td class="card-name">状态转化</td><td>压缩</td><td>1费：6甲+所有状态牌<strong>变为燃料</strong></td></tr>
- <tr><td class="card-name">状态全体</td><td>烟囱</td><td>1费能力：每生成一张状态牌，<strong>全体5伤</strong></td></tr>
- <tr><td class="card-name">状态过牌</td><td>迭代</td><td>1费能力：每回合抽到的第一张状态牌→<strong>改抽2张</strong></td></tr>
- <tr><td class="card-name">状态生成球</td><td>变废为宝</td><td>1费能力：每生成状态牌→<strong>生成1随机充能球</strong></td></tr>
- <tr><td class="card-name">火箭拳</td><td>火箭拳</td><td>2费：13伤+抽1。生状态牌后→<strong>0费</strong></td></tr>
- </tbody>
- </table>
- <div class="info-box tip"><strong>联机定位：</strong>鸡煲是团队中最强对策角色。面对会塞牌的高血量敌人，鸡煲一人把全队的状态牌转化为输出和充能球。高射炮 + 奋力突破 的 combo 是最简单高效的状态输出循环。</div>
- </div>
-
- <!-- 玻璃 充能球 -->
- <div class="section">
- <h2>流派四：玻璃 充能球 爆发流 ⭐⭐⭐</h2>
- <p><strong>核心思路：</strong>利用二代新增的 玻璃 充能球进行群体压制。玻璃工艺 生成玻璃球，碎裂 激发全部充能球两次实现爆发。</p>
- <table class="card-table">
- <thead><tr><th>定位</th><th>核心卡牌</th><th>效果</th></tr></thead>
- <tbody>
- <tr><td class="card-name">玻璃来源</td><td>玻璃工艺</td><td>1费：5甲+生成1玻璃球</td></tr>
- <tr><td class="card-name">玻璃来源</td><td>折射</td><td>3费：9伤×2+生成2玻璃球</td></tr>
- <tr><td class="card-name">玻璃来源</td><td>旋转器</td><td>1费能力：每回合开始生成1玻璃球</td></tr>
- <tr><td class="card-name">爆发核心</td><td>碎裂</td><td>1费：11全体伤+<strong>激发所有球两次</strong></td></tr>
- <tr><td class="card-name">电力辅助</td><td>特斯拉线圈</td><td>0费：3伤+<strong>触发所有闪电球</strong></td></tr>
- </tbody>
- </table>
- <div class="info-box warn"><strong>注意：</strong>玻璃 充能球 每回合伤害递减，适合速战速决不适合磨血。搭配 碎裂 在玻璃球数值最高时激发，打出爆发窗口。</div>
- </div>
-
- <div class="section">
- <h2>故障机器人通用 提示</h2>
- <ul>
- <li><strong>不要像一代那样过度依赖永久集中</strong>——碎片整理 稀有、消耗 没了——学会用 热修复/同步 做临时爆发</li>
- <li>野性 + 爪击 是二代最简单的鸡煲入门流派</li>
- <li>状态处理流在<strong>多人联机中价值最高</strong>，单人强度中等</li>
- <li>玻璃 充能球 是新型 全体工具，对群体战斗效果拔群</li>
- <li>商店优先删 打击——打击在 故障机器人 牌组里是最废的卡</li>
- </ul>
- </div>
-
+<div class="section">
+<h2>🤖 故障机器人</h2>
+<div style="display:flex;gap:16px;flex-wrap:wrap;margin-bottom:20px;">
+<span class="tier-badge tier-c">T2</span><span>遗物：<strong style="color:var(--gold);">破损核心</strong></span><span>难度：<strong style="color:var(--red);">⭐⭐⭐⭐ 最难</strong></span>
+</div>
+<p>二代经历了最大变革的角色。约<strong>27张一代卡移除</strong>——包括暴风雪、递归、静态释放、寻找、裂变、增幅等经典卡；新增<strong>40+卡</strong>。核心变化：①集中大多变为临时效果，碎片整理升稀有，消耗/偏向认知移除；②新增<strong>玻璃球</strong>新型AoE充能球；③新增完整的<strong>状态牌协同</strong>体系；④野性让爪击自循环。</p>
 </div>
 
-<footer class="footer"><p>内容来源：2026年3月 EA · v0.105 · 游戏论坛/社区实测</p></footer>
+<div class="section">
+<h2>一代主要移除卡牌</h2>
+<table class="card-table">
+<thead><tr><th>移除卡</th><th>说明</th></tr></thead>
+<tbody>
+<tr><td style="color:var(--red);">🗑️ 暴风雪</td><td>冰霜球累计触发伤害。被新卡冰雹风暴取代</td></tr>
+<tr><td style="color:var(--red);">🗑️ 递归</td><td>激发充能球并重新生成。操作空间太大移除</td></tr>
+<tr><td style="color:var(--red);">🗑️ 静态释放</td><td>受伤充能闪电。与新设计理念冲突</td></tr>
+<tr><td style="color:var(--red);">🗑️ 消耗</td><td>+2集中-1球位。新集中体系下太强，移除</td></tr>
+<tr><td style="color:var(--red);">🗑️ 偏向认知</td><td>+4集中每回合-1。改为仅远古事件池可获得</td></tr>
+<tr><td style="color:var(--red);">🗑️ 寻找</td><td>搜索抽牌堆任意卡。太强，被全息影像削弱替代</td></tr>
+<tr><td style="color:var(--red);">🗑️ 裂变</td><td>移除所有球换能量和抽牌。与状态牌新体系不兼容</td></tr>
+<tr><td style="color:var(--red);">🗑️ 增幅</td><td>下一能力牌两次。被信号增强替代</td></tr>
+<tr><td style="color:var(--red);">🗑️ 核心电涌</td><td>11伤+1人工制品。与集中的临时化设计不符</td></tr>
+<tr><td style="color:var(--red);">🗑️ 电动力学</td><td>闪电球全体化。被玻璃球替代了AoE生态位</td></tr>
+<tr><td style="color:var(--red);">🗑️ 雷霆打击</td><td>闪电球数量×7伤害。与新球类型不兼容</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="section">
+<h2>全卡从夯到拉锐评</h2>
+<table class="card-table">
+<thead><tr><th>评级</th><th>卡牌</th><th>类型</th><th>一句话锐评</th></tr></thead>
+<tbody>
+<tr><td>🤩夯</td><td class="card-name">冰川</td><td>冰霜防御</td><td>2费12甲+2冰霜球。最强防御卡，冰流基石</td></tr>
+<tr><td>🤩夯</td><td class="card-name">碎片整理</td><td>永久集中</td><td>+1集中。升稀有后极难拿到，但拿到就是通关保障</td></tr>
+<tr><td>🤩夯</td><td class="card-name">野性</td><td>爪击引擎</td><td>每回合第一张0费攻击自动回手。彻底解放爪击</td></tr>
+<tr><td>🤩夯</td><td class="card-name">信号增强</td><td>能力复制</td><td>下一能力牌两次。增幅的新版，1费很灵活</td></tr>
+<tr><td>🤩夯</td><td class="card-name">高射炮</td><td>状态输出</td><td>消耗所有状态牌每张8伤。状态流核心输出</td></tr>
+<tr><td>👍强</td><td class="card-name">寒流</td><td>冰霜来源</td><td>1费6伤+1冰霜球。攻防一体</td></tr>
+<tr><td>👍强</td><td class="card-name">冰枪</td><td>冰霜爆发</td><td>3费19伤+3冰霜球。一卡三球，冰流大爆发</td></tr>
+<tr><td>👍强</td><td class="card-name">冰雹风暴</td><td>冰霜输出</td><td>回合结束有冰霜球则6全体伤。冰流输出核心</td></tr>
+<tr><td>👍强</td><td class="card-name">热修复</td><td>临时集中</td><td>0费本回合+2集中。免费集中，必拿</td></tr>
+<tr><td>👍强</td><td class="card-name">同步</td><td>临时集中</td><td>1费每种充能球+2集中。3种球=+6集中</td></tr>
+<tr><td>👍强</td><td class="card-name">爪击</td><td>0费输出</td><td>每用一次全局+2伤。配合野性=无限成长</td></tr>
+<tr><td>👍强</td><td class="card-name">万物一心</td><td>回收核心</td><td>弃牌堆所有0费牌回手。爪击流终极技</td></tr>
+<tr><td>👍强</td><td class="card-name">碎裂</td><td>球爆发</td><td>激发所有充能球两次。制后爆发力翻倍</td></tr>
+<tr><td>👍强</td><td class="card-name">烟囱</td><td>状态AoE</td><td>每生成状态牌全体5伤。状态流引擎</td></tr>
+<tr><td>👍强</td><td class="card-name">压缩</td><td>状态转化</td><td>6甲+所有状态变燃料。废牌变资源</td></tr>
+<tr><td>👌可</td><td class="card-name">冷静头脑</td><td>冰霜过牌</td><td>1冰霜球+抽1。均衡之选</td></tr>
+<tr><td>👌可</td><td class="card-name">扩容</td><td>球位</td><td>+2充能球位。冰流必备</td></tr>
+<tr><td>👌可</td><td class="card-name">浏览</td><td>过牌</td><td>1费抽3。朴实过牌</td></tr>
+<tr><td>👌可</td><td class="card-name">玻璃工艺</td><td>玻璃来源</td><td>5甲+1玻璃球。玻璃流起步</td></tr>
+<tr><td>👌可</td><td class="card-name">折射</td><td>玻璃爆发</td><td>9伤×2+2玻璃球。玻璃流大爆发</td></tr>
+<tr><td>👌可</td><td class="card-name">特斯拉线圈</td><td>闪电协同</td><td>0费触发所有闪电球。闪电流价值翻倍</td></tr>
+<tr><td>👌可</td><td class="card-name">超级光束</td><td>AoE爆发</td><td>2费26全体伤-3集中。v0.105增强后可用</td></tr>
+<tr><td>👌可</td><td class="card-name">奋力突破</td><td>状态来源</td><td>13甲+2伤口。高甲+自产状态，完美配合高射炮</td></tr>
+<tr><td>👌可</td><td class="card-name">变废为宝</td><td>状态生成球</td><td>每生成状态牌随机充能。状态流辅助</td></tr>
+<tr><td>👌可</td><td class="card-name">火箭拳</td><td>状态联动</td><td>生状态后变0费。状态流灵活输出</td></tr>
+<tr><td>👌可</td><td class="card-name">全息影像</td><td>回收</td><td>3甲+弃牌堆取回。灵活好用</td></tr>
+<tr><td>👌可</td><td class="card-name">适应打击</td><td>0费来源</td><td>2费18伤+0费复制。为爪击提供弹药</td></tr>
+<tr><td>🤔凑</td><td class="card-name">瞄准眼睛</td><td>0费虚弱</td><td>敌人攻击中则1层虚弱。有条件的0费</td></tr>
+<tr><td>🤔凑</td><td class="card-name">光束细胞</td><td>0费易伤</td><td>3伤+1易伤。前期还行后期乏力</td></tr>
+<tr><td>🤔凑</td><td class="card-name">刮削</td><td>0费滤牌</td><td>抽4丢非0费牌。只适合纯爪击流</td></tr>
+<tr><td>🤔凑</td><td class="card-name">旋转器</td><td>自动玻璃</td><td>每回合生成1玻璃球。启动太慢</td></tr>
+<tr><td>🤔凑</td><td class="card-name">迭代</td><td>状态过牌</td><td>抽到的状态变抽2。需要整套状态体系</td></tr>
+<tr><td>💩拉</td><td class="card-name">加速脱离</td><td>0费塞牌</td><td>6甲+塞眩晕。数值太低</td></tr>
+<tr><td>💩拉</td><td class="card-name">偏见认知</td><td>限定集中</td><td>仅远古池可得，且集中每回合降低。不如热修复</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="section">
+<h2>流派速查</h2>
+<ul>
+<li><strong>冰霜集中流</strong>：冰川+寒流+冰枪+热修复+同步+碎片整理+冰雹风暴。注意集中是临时的，热修复/同步在需要时开。冰雹风暴是输出核。</li>
+<li><strong>爪击流</strong>：爪击+野性+万物一心+全息影像+适应打击+刮削。野性让爪击每回合回手，不用等万物一心。</li>
+<li><strong>状态处理流</strong>：高射炮+奋力突破+烟囱+压缩+变废为宝。二代独有体系，主动造状态→爆发清空。联机价值最高。</li>
+<li><strong>玻璃球爆发流</strong>：玻璃工艺+折射+旋转器+碎裂。AOE递减的新型充能球，配碎裂双倍激发打爆发窗口。</li>
+</ul>
+</div>
+
+</div>
+<footer class="footer"><p>内容来源：2026年3月EA · v0.105 · 社区实测</p></footer>
 </body>
 </html>
